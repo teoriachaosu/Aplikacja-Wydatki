@@ -1,0 +1,190 @@
+body
+{
+background-color:#f5ebd6;/*#5a533f;*/
+font-family: Calibri;
+margin: 0px;
+}
+form
+{
+padding:5px;
+float:left;
+}
+#baner1
+{
+font-size:100%;
+width:36%;
+font-weight:bold;
+background-color:#aba287; 
+color:#2d291f; /*#009999;*/
+/*text-align:left;*/
+float:left;
+height:135px;
+}
+#baner2
+{
+font-size:100%;
+width:29%;
+font-weight:bold;
+background-color:#aba287; 
+color:#2d291f; /*#009999;*/
+text-align:left;
+float:left;
+height:135px;
+}
+#baner3
+{
+font-size:100%;
+width:35%;
+font-weight:bold;
+background-color:#aba287; 
+color:#2d291f; /*#009999;*/
+text-align:left;
+float:left;
+height:135px;
+}
+#formwpr
+{
+background-color:#aba287;
+font-size:100%;
+font-weight:bold;
+color:#2d291f;/*#993300;*/
+width:22%;
+/*height:1000px;*/
+text-align:center;
+/*padding-top:10px;*/
+/*border-right: 10px solid #f5ebd6;*/
+/*border-top: 1px dotted #2d291f;*/
+float:left;
+
+}
+#update
+{
+padding-left:10px;
+color:#993300;
+float:left;	
+}
+#listgoods
+{
+padding-top:5px;
+background-color:#f5ebd6;
+clear:both;	
+font-weight:normal;
+}
+#inputp
+{
+padding-left:10px;
+color:#006666;/*#ffd87e;*/
+float:left;	
+}
+#space
+{
+/*background-color:#aba287;*/ 
+font-size:100%;
+width:14%;
+color:black;
+text-align:left;
+/*padding-left:5px;*/
+/*padding-top:5px;*/
+float:left;	
+}
+#result2
+{
+/*font-weight:bold;*/
+font-size:100%;
+width:29%;
+color:black;
+text-align:left;
+/*padding-left:10px;*/
+/*padding-top:5px;*/
+float:left;
+/*background-color:#aba287;
+/*border-left:1px dotted #2d291f;*/
+
+}
+#result3
+{
+font-size:100%;
+/*font-weight:bold;*/
+width:35%;
+color:black;/*#2d291f; #5a533f; #f5ebd6;*/ 
+text-align:left;
+/*padding-left:5px;*/
+/*padding-top:5px;*/
+float:left;
+
+}
+#button0
+{
+border-width: medium;
+border-color: #cbc5b4;
+padding:4px;
+background-color:#968b69;/*#006666; /*#993300; /*#968b69;*/
+outline-width: thin;
+color:#f0e1c2; 
+}
+#button1
+{
+border-width: medium;
+border-color: #cbc5b4;
+padding:4px;
+background-color:#006666;/*#006666; /*#993300; /*#968b69;*/
+outline-width: thin;
+color:#f0e1c2; 
+}
+#button2
+{
+border-width: medium;
+border-color: #cbc5b4;
+padding:4px;
+background-color:#7a3d1f; /*#993300;/*#006666; /*#993300; /*#968b69;*/
+outline-width: thin;
+color:#f0e1c2; 
+}
+#button0, #button1, #button2:hover
+{
+cursor:pointer;
+}
+
+span.add_goods {
+color:#006666;
+font-weight:bold;
+}
+
+#tabl td, tr
+{
+border:1px solid #aba287;
+padding-left:5px;
+padding-right:5px;
+text-align:left;
+}
+
+#tabl3 
+{
+/*padding-left:5px;*/
+padding-right:5px;
+border-collapse:collapse;	
+text-align:left;
+}
+
+#tabl2 tr, td
+{
+/*border:1px solid black;*/
+text-align:left;
+padding:2px;
+}
+#tabl4 td, tr
+{
+/*border:1px solid #aba287;*/	
+padding-left:6px; 
+padding-right:6px;
+text-align:left;
+}
+#tekst
+{
+font-family:Cambria;	
+}
+a:hover
+{
+color:#ffd87e;
+cursor:pointer;
+}
