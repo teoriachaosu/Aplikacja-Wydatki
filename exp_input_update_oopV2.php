@@ -14,10 +14,8 @@ if ( window.history.replaceState ) { // prevent form resubmission on page refres
     }
 </script>
 <?php 
-//Website-based GUI for data search, insertion and correction for the 'expenses' database by M.B.
 require_once 'exp_db_data.php'; 
 require_once 'ClassShowInfo.php';
-//require_once 'ClassItemSearch.php';
 require_once 'ClassCreateItem.php';
 require_once 'ClassUpdateItem.php';
 require_once 'ClassCreatePurchase.php';
