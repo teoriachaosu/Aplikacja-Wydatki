@@ -17,7 +17,7 @@ try{
 
 $con->exec('SET NAMES utf8');
 
-function keepData($val, $clr_form) {
+function keepData($val, $clr_form) { // prevent clearing field on form submit
 	if($val && isset($_POST[$clr_form])) 
 		echo htmlentities($val);
 	}
