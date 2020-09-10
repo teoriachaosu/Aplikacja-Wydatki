@@ -32,10 +32,7 @@ if($this->pu_inp_submit) // submit button
 	if(!$test_itm_id->rowCount())	
 		echo 'Nie podano lub brak towaru o podanym ID w bazie.';
 	else 
-		{//if it's present, check the correctness of the date entered
-		//if(!preg_match('/^\d{4}-\d\d-\d\d$/', $this->purchase_date))
-		//	echo 'Akceptowalny format daty to RRRR-MM-DD';
-		//else {// if date format correct, validate the rest of fields
+		{
 		$cnt = 0;
 		$values = [$this->item_id, $this->purchase_date, $this->place, $this->amount, $this->price, $this->payment, $this->discount];
 		for($i=0; $i<=3; $i++)
@@ -50,7 +47,6 @@ if($this->pu_inp_submit) // submit button
 			echo 'Pomyślnie dodano zakup ID '.$this->con->lastInsertId();
 		else 
 			echo 'Operacja nie powiodła się.';
-		//	}
 		}
 	}	
 	else
