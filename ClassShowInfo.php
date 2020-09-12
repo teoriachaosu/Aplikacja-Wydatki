@@ -40,7 +40,6 @@ echo '</table>';
 public function PrintHelp() {
 	if($this->form_info) {
 		$lines=file($this->file_name); //subtitle file into array
-		$num_rows = count($lines);
 		foreach($lines as $row)
 			echo $row.'</br>';
 		}
