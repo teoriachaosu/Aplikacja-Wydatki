@@ -1,0 +1,3 @@
+<br><br><b>WPROWADZANIE TOWARU</b>
+
+Oba pola są wymagane. Przed wprowadzeniem towaru upewnij się przy pomocy wyszukiwania towaru, czy nie znajduje się on już bazie. ID towaru nadawane jest automatycznie.

@@ -1,0 +1,8 @@
+0/--Poprawianie zakupu - komunikaty dla użytkownika--
+1/Nie podano lub brak zakupu o podanym ID w bazie.
+2/Brak towaru o podanym ID w bazie.
+3/Akceptowalny format daty to RRRR-MM-DD.
+4/Pomyślnie zmodyfikowano zakup ID
+5/Nie dokonano żadnych zmian
+6/Podaj ID zakupu i nową zawartość pola/pól do poprawy
+7/Wystąpił błąd bazy danych

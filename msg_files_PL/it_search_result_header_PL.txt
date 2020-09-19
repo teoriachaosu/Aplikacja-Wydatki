@@ -1,0 +1,4 @@
+0/--Opis wydruku wyników wyszukiwania towaru--
+1/Liczba znalezionych rekordów:
+2/Nazwa towaru
+3/ID kat.

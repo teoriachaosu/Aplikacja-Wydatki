@@ -1,0 +1,5 @@
+0/--Wyszukiwanie zakupu - komunikaty dla użytkownika--
+1/<b>Brak danych spełniających kryteria wyszukiwania</b>
+2/<b>Sumowanie ilości wymaga nazwy towaru i pustych pól ID kategorii/zakupu</b>
+3/<b>Akceptowalny format daty to RRRR-MM-DD</b>
+4/Database error occurred

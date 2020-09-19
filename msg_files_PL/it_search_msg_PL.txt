@@ -1,0 +1,4 @@
+0/--Wyszukiwanie towaru - komunikaty dla użytkownika--
+1/<b>Brak danych spełniających kryteria wyszukiwania</b></br></br>
+2/<b>Niedozwolona wartość dla wyszukiwania po ID</b>
+3/Wystąpił błąd bazy danych

@@ -1,0 +1,11 @@
+<b>WYSZUKIWANIE TOWARU</b>
+
+<b>Wyszukiwnie po nazwie</b>
+Wpisz nazwę/fragment nazwy towaru w polu tesktowym, następnie z rozwijanej listy "Wyszukaj po" wybierz "Nazwa" (ustawienie domyślne).
+Puste pole tekstowe + wyszukiwanie po nazwie - wypisanie wszystkich towarów w bazie.
+
+<b>Wyszukiwanie po ID towaru/kategorii</b>
+Wpisz ID w polu tekstowym, następnie z rozwijanej listy "Wyszukaj po" wybierz "ID towaru" lub "ID kategorii".
+
+Z rozwijanej listy "Porządkuj według" wybierz kryterium porządkowania (domyślnie malejąco).
+Pole wyboru "Rosnąco" - odwrócenie kolejności porządkowania.

@@ -1,0 +1,17 @@
+0/---Opis wydruku wyników wyszukiwania zakupu---
+1/Liczba znalezionych rekordów:
+2/Okres:
+3/do
+4/ID zak.
+5/Nazwa towaru
+6/Ilość
+7/Cena
+8/Zapłata
+9/Rabat
+10/Data zakupu
+11/Miejsce
+12/Kategoria
+13/Suma zapłaty
+14/suma rabatu
+15/Łączna ilość
+

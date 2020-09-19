@@ -1,0 +1,7 @@
+<br><br><b>POPRAWIANIE ZAKUPU</b>
+
+Pole "ID zakupu" jest wymagane. Wpisz nową zawartość dla pola lub pól, które chcesz zmienić. Puste pole oznacza brak zmian. Format daty: RRRR-MM-DD.
+
+
+
+

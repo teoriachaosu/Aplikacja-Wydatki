@@ -1,0 +1,3 @@
+<br><br><b>POPRAWIANIE TOWARU</b>
+
+Pole "ID towaru" jest wymagane. Analogicznie do poprawiania zakupu, wpisz nową zawartość dla jednego lub obu pozostałych pól. Puste pole oznacza brak zmian. 

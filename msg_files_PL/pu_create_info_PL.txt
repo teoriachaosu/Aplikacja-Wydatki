@@ -1,0 +1,10 @@
+<br><br><b>WPROWADZANIE ZAKUPU</b>
+
+Aby znaleźć ID wprowadzanego towaru, wyszukaj go w wyszukiwarce towarów. Jeśli towaru nie ma w bazie, wprowadź go (ID towaru zostanie nadane automatycznie).
+Cena, zapłata i rabat mogą przyjmować wartość 0. W tym celu pozostaw puste pole lub wpisz 0. Pozostałe pola muszą być wypełnione. ID zakupu nadawane jest automatycznie. Format daty: RRRR-MM-DD. 
+Dla zachowania danych w polach "Data" i "Miejsce" po dodaniu zakupu, zaznacz "Nie czyść daty i miejsca" (usprawnienie wprowadzania wielu zakupów z tego samego dnia i miejsca). 
+
+
+
+
+

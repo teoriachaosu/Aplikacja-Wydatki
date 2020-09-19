@@ -1,0 +1,8 @@
+0/--Wprowadzanie towaru - komunikaty dla użytkownika--
+1/Nie podano nazwy towaru
+2/Nie podano lub brak kategorii o podanym ID w bazie
+3/Towar został pomyślnie dodany, ID:
+4/Operacja nie powiodła się
+5/Oba pola muszą być wypełnione
+6/Podany towar już istnieje w bazie
+7/Wystapił błąd bazy danych 

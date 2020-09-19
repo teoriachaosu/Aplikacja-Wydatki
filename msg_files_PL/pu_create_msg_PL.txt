@@ -1,0 +1,9 @@
+0/--Wprowadzanie zakupu - komunikaty dla użytkownika--
+1/Nie podano lub brak towaru o podanym ID w bazie.
+2/Nie wypełniono wszystkich wymaganych pól.
+3/Akceptowalny format daty to RRRR-MM-DD.
+4/Pomyślnie dodano zakup ID
+5/Operacja nie powiodła się.
+6/Pola: ID towaru, Ilość, Data, Miejsce muszą być wypełnione.
+7/Wystąpił błąd bazy danych
+

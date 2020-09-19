@@ -1,0 +1,8 @@
+0/--Poprawianie towaru - komunikaty dla użytkownika--
+1/Nie podano lub brak towaru o podanym ID w bazie.
+2/Brak kategorii o podanym ID w bazie.
+3/Pomyślnie zmodyfikowano towar ID
+4/Nie dokonano żadnych zmian
+5/Podaj ID towaru oraz nową nazwę i/lub ID kategorii
+6/Podany towar już istnieje w bazie
+7/Wystąpił błąd bazy danych

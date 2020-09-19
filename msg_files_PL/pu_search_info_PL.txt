@@ -1,0 +1,22 @@
+<b>WYSZUKIWANIE ZAKUPU</b>
+
+Pole "Nazwa" - wyszukiwanie zakupów po nazwie lub początkowym fragmencie nazwy towaru. 
+Pole wyboru "Sumuj ilość" - tylko dla zakupów jednego konkretnego towaru lub grupy towarów o takim samym początku nazwy. 
+Pole "Miejsce" - wyszukiwanie zakupów z konkretnego miejsca lub podobnych miejsc (podobnie jak wyszukiwanie po nazwie).
+Pole "ID kategorii" - wyszukiwanie zakupów towarów z określonej kategorii.
+Pole "ID zakupu" - wyszukiwanie jednego konkretnego zakupu o podanym ID.
+Kryteria wyszukiwania można łączyć.
+Pole "Porządkuj według" - wybór kryterium porządkowania z rozwijanej listy (domyślnie malejąco).
+Pole wyboru "Rosnąco" - odwrócenie kolejności porządkowania.
+
+<b>Uproszczone wyszukiwanie po dacie</b>
+Oba pola z datą puste - zakupy od początku istnienia bazy do dnia obecnego.
+Podana tylko "Data od" - zakupy od tej daty do dnia obecnego.
+Podana tylko "Data do" - zakupy tylko z tego dnia.
+Format daty: RRRR-MM-DD
+
+
+
+
+
+
