@@ -1,6 +1,6 @@
 <?php
 
-define("DSN", "mysql:host=localhost;dbname=expenses_tests");
+define("DSN", "mysql:host=localhost;dbname=expenses");
 define("USERNAME", "root");
 define("PASSWORD", "");
 
