@@ -114,7 +114,7 @@ if ($this->submit_button) // submit button
 	
 		if($srch_qry->rowCount() == 0) {
 			$this->printMsg(1);
-			exit; //('<b>Brak danych spełniających kryteria wyszukiwania</b>');
+			exit; //('<b>No data matching your search criteria was found</b>');
 			}
 		// qry1
 		if($this->total_amt) {  
@@ -124,7 +124,7 @@ if ($this->submit_button) // submit button
 			}
 			else {
 				$this->printMsg(2);
-				exit; //("<b>Sumowanie ilości wymaga nazwy towaru i pustych pól ID kategorii/zakupu </b>");
+				exit; //("<b>Summing up the amount requires item name and empty category/item ID fields </b>");
 				}
 		}
 		// qry2
@@ -140,7 +140,7 @@ if ($this->submit_button) // submit button
 		$this->resPrintout($srch_qry);
 	}	
 	else
-		$this->printMsg(3); // echo '<b>Akceptowalny format daty to RRRR-MM-DD</b>';
+		$this->printMsg(3); // echo '<b>Acceptable date format is YYYY-MM-DD</b>';
 	}
 		}catch (PDOException $ex) {
 			$this->printMsg(4); //echo 'Database error occurred'; 

@@ -20,32 +20,32 @@ if($this->submit_button)
 	$test_item_id->execute([$this->id_item]);
 	
 	if(!$test_item_id->rowCount())		
-		$this->printMsg(1);//echo 'Nie podano lub brak towaru o podanym ID w bazie. ';
+		$this->printMsg(1);//echo 'Item ID not specified or no item matching given ID in database.';
 	else {
 		$test_cat_id->execute([$this->id_cat]);
 		if($this->id_cat && $test_cat_id->rowCount()) 
 			$update_cat_id->execute([$this->id_cat, $this->id_item]);
 		else if($this->id_cat) 
-			$this->printMsg(2);//echo 'Brak kategorii o podanym ID w bazie. ';
+			$this->printMsg(2);//echo 'No category matching given ID in database.';
 		
 		if($this->item_name) 
 			$update_name->execute([$this->item_name, $this->id_item]);
 		
 		if($update_cat_id->rowCount() || $update_name->rowCount()) {
-			$this->printMsg(3);//echo 'Pomyślnie zmodyfikowano towar ID '.$this->id_item;
+			$this->printMsg(3);//echo 'The item has been successfully updated, ID:'
 			echo $this->id_item;
 			}
 		else if (!$update_cat_id->rowCount() && !$update_name->rowCount())
-			$this->printMsg(4);//echo 'Nie dokonano żadnych zmian ';
+			$this->printMsg(4);//echo 'No changes have been made';
 		}	
 }
 else
-$this->printMsg(5);//echo 'Podaj ID towaru oraz nową nazwę i/lub ID kategorii ';
+$this->printMsg(5);//echo 'Enter item ID and a new item name and/or category ID';
 	}catch(PDOException $ex){
 		if ($ex->errorInfo[1] == 1062)
-			$this->printMsg(6);//echo 'Podany towar już istnieje w bazie ';
+			$this->printMsg(6);//echo 'The given item is already in database';
 		else 
-			$this->printMsg(7);//echo "Wystąpił błąd bazy danych "; //.$ex;
+			$this->printMsg(7);//echo "Database error occurred"; //.$ex;
 			}
 	}
 }

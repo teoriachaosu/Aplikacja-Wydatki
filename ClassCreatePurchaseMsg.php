@@ -28,31 +28,31 @@ if($this->submit_button)
 	// validate item id
 	$test_itm_id->execute([$this->item_id]);
 	if(!$test_itm_id->rowCount())	
-		$this->printMsg(1, $this->msg_file); //echo 'Nie podano lub brak towaru o podanym ID w bazie.';
-	else 
+		$this->printMsg(1, $this->msg_file); //echo 'Item ID not specified or no item with a given ID in database.';
+	else 									
 		{
 		$cnt = 0;
 		$values = [$this->item_id, $this->purchase_date, $this->place, $this->amount, $this->price, $this->payment, $this->discount];
 		for($i=0; $i<=3; $i++)
 			if($values[$i] != 0 || $values[$i] != '') $cnt++;
 		if($cnt < 4)
-			$this->printMsg(2, $this->msg_file); //echo 'Nie wypełniono wszystkich wymaganych pól. ';
+			$this->printMsg(2, $this->msg_file); //echo 'Not all required fields have been filled.';
 		else if(!preg_match('/^\d{4}-\d\d-\d\d$/', $this->purchase_date))
-			$this->printMsg(3, $this->msg_file); //echo 'Akceptowalny format daty to RRRR-MM-DD. ';
+			$this->printMsg(3, $this->msg_file); //echo 'Acceptable date format is YYYY-MM-DD.';
 		else 
 			$insert_qry->execute($values);
 		if($this->con->lastInsertId()) { 	//check if the entry has been added 
-			$this->printMsg(4, $this->msg_file); //echo 'Pomyślnie dodano zakup ID ';
+			$this->printMsg(4, $this->msg_file); //echo 'The purchase has been successfully added, ID:';
 			echo $this->con->lastInsertId();
 			}
 		else 
-			$this->printMsg(5, $this->msg_file); //echo 'Operacja nie powiodła się.';
+			$this->printMsg(5, $this->msg_file); //echo 'Operation unsuccessful.';
 		}
 	}	
 	else
-		$this->printMsg(6, $this->msg_file); //echo 'Pola: ID towaru, Ilość, Data, Miejsce muszą być wypełnione. '; 
+		$this->printMsg(6, $this->msg_file); //echo 'The fields: Item ID, Amount, Date, Place must be filled.'; 
 		}catch(PDOException $ex) {
-			$this->printMsg(7, $this->msg_file); //echo 'Wystąpił błąd bazy danych '; // .$ex;
+			$this->printMsg(7, $this->msg_file); //echo 'Database error occurred'; 
 			}
 	}
 }

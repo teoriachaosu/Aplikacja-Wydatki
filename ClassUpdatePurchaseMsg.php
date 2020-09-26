@@ -31,18 +31,18 @@ if($this->submit_button)
 	// validate purchase id
 	$test_pu_id->execute([$this->id_purchase]);
 	if(!$test_pu_id->rowCount())
-		$this->printMsg(1); //echo 'Nie podano lub brak zakupu o podanym ID w bazie. ';
+		$this->printMsg(1); //echo 'Purchase ID not specified or no purchase with a given ID in database';
 	// validate item id
 	if($this->item_id) { 
 		$valid_id = true; // without this, empty form field is treated as non-existent item id
 		$test_it_id->execute([$this->item_id]);
 		if(!$test_it_id->rowCount()) { // validate item ID
-			$this->printMsg(2); //echo 'Brak towaru o podanym ID w bazie. ';
+			$this->printMsg(2); //echo 'No item with a given ID in database. ';
 			$valid_id = false;
 			}
 		}	
 	if($this->purchase_date && !preg_match('/^\d{4}-\d\d-\d\d$/', $this->purchase_date))
-		$this->printMsg(3); //echo 'Akceptowalny format daty to RRRR-MM-DD. ';
+		$this->printMsg(3); //echo 'Acceptable date format is YYYY-MM-DD. ';
 	
 	else { // if any field empty, no changes made
 		if($this->amount !== null)
@@ -75,15 +75,15 @@ if($this->submit_button)
 			}
 		}
 	if($update == true) {
-		$this->printMsg(4); //echo 'Pomyślnie zmodyfikowano zakup ID ';
+		$this->printMsg(4); //echo 'Purchase successfully updated, ID:';
 		echo $this->id_purchase; 
 		}
-		else $this->printMsg(5); //echo 'Nie dokonano żadnych zmian';
+		else $this->printMsg(5); //echo 'No changes have been made';
 	}
 	else
-	$this->printMsg(6); //echo 'Podaj ID zakupu i nową zawartość pola/pól do poprawy';
+	$this->printMsg(6); //echo 'Enter purchase ID and new contents of the field(s) to be updated';
 	} catch(PDOException $ex) {
-		$this->printMsg(7); //echo "Wystąpił błąd bazy danych";
+		$this->printMsg(7); //echo "Database error occurred";
 		}
 	
 	}

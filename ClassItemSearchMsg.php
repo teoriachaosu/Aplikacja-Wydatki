@@ -36,7 +36,7 @@ if($qry->rowCount()>0) {
 	echo '</table>';
 	}
 else if($qry->rowCount()==0)
-$this->printMsg(1); //echo '<b>Brak danych spełniających kryteria wyszukiwania</b></br></br>';	
+$this->printMsg(1); //echo '<b>No data matching your search criteria has been found</b></br></br>';	
 }
 
 public function itemSearch(string $header_filename=''): void { 
@@ -57,12 +57,12 @@ try {
 		$qry = $this->con->prepare("SELECT id_item, item_name, cat_id FROM commodity WHERE $whereid=? ORDER BY $orderby $ascdesc");
 	}else {
 		$this->printMsg(2);
-		exit(); //'<b>Niedozwolona wartość dla wyszukiwania po ID</b>');
+		exit(); //'<b>Invalid value for the search by ID</b>');
 		}
 	$qry->execute([$itm_data]);
 	$this->prt_res_cnt_records($qry);		
 		}catch (PDOException $ex) {
-			$this->printMsg(3); //echo 'Database error occurred'; 
+			$this->printMsg(3); //'Database error occurred'; 
 			}
 	}
 }
